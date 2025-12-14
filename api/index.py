@@ -37,9 +37,9 @@ except (ConnectionFailure, OperationFailure, ValueError) as e:
 
 
 # --- RUTA PRINCIPAL DE INGESTA DE DATOS ---
-# Vercel enruta automáticamente las peticiones POST a la ruta de la carpeta (api/ingestar)
+# Vercel enruta automáticamente las peticiones POST a la ruta de la carpeta (api/index)
 # a esta función.
-@app.route('/api/ingestar', methods=['POST'])
+@app.route('/api/index', methods=['POST'])
 def ingestar_temperatura():
     """Recibe la temperatura del ESP32 vía HTTP POST y la guarda en MongoDB Atlas."""
     
