@@ -72,7 +72,7 @@ def ingestar_temperatura():
     
     registro = {
         "temperatura": temperatura_float,
-        "timestamp": datetime.now(tz_utc_plus_2),
+        "timestamp": datetime.now(tz_utc_plus_1),
         "device_ip": request.remote_addr # IP pública del dispositivo/red
     }
 
