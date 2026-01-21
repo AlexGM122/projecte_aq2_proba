@@ -86,4 +86,3 @@ def ingestar_temperatura():
         # Captura de errores de inserción o timeout de MongoDB
         print(f"ERROR DE INSERCIÓN: {e}")
         return jsonify({"error": "Fallo al guardar en la base de datos", "details": str(e)}), 500
-
